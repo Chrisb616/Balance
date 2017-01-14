@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B17EE9A1E2A87A4008DA7D0 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE991E2A87A4008DA7D0 /* Goal.swift */; };
+		1B17EE9C1E2A881F008DA7D0 /* OneTimeGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE9B1E2A881F008DA7D0 /* OneTimeGoal.swift */; };
+		1B17EE9E1E2A8947008DA7D0 /* MultipleGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */; };
 		1B1E29D81E28758B00D4F4F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */; };
 		1B1E29DA1E28758B00D4F4F9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29D91E28758B00D4F4F9 /* MenuViewController.swift */; };
 		1B1E29E01E28758B00D4F4F9 /* Balance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29DE1E28758B00D4F4F9 /* Balance.xcdatamodeld */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B17EE991E2A87A4008DA7D0 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		1B17EE9B1E2A881F008DA7D0 /* OneTimeGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTimeGoal.swift; sourceTree = "<group>"; };
+		1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleGoal.swift; sourceTree = "<group>"; };
 		1B1E29D41E28758B00D4F4F9 /* Balance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Balance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B1E29D91E28758B00D4F4F9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				1B1E29E31E28758B00D4F4F9 /* LaunchScreen.storyboard */,
 				1B1E29E61E28758B00D4F4F9 /* Info.plist */,
 				1B1E29DE1E28758B00D4F4F9 /* Balance.xcdatamodeld */,
+				1B17EE991E2A87A4008DA7D0 /* Goal.swift */,
+				1B17EE9B1E2A881F008DA7D0 /* OneTimeGoal.swift */,
+				1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */,
 			);
 			path = Balance;
 			sourceTree = "<group>";
@@ -144,8 +153,11 @@
 			files = (
 				1B1E29F11E2A692600D4F4F9 /* User.swift in Sources */,
 				1B1E29DA1E28758B00D4F4F9 /* MenuViewController.swift in Sources */,
+				1B17EE9C1E2A881F008DA7D0 /* OneTimeGoal.swift in Sources */,
 				1B1E29D81E28758B00D4F4F9 /* AppDelegate.swift in Sources */,
+				1B17EE9E1E2A8947008DA7D0 /* MultipleGoal.swift in Sources */,
 				1B1E29F31E2A6A1E00D4F4F9 /* CoreDataManager.swift in Sources */,
+				1B17EE9A1E2A87A4008DA7D0 /* Goal.swift in Sources */,
 				1B1E29E01E28758B00D4F4F9 /* Balance.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ class MenuViewController: UIViewController {
         
         let user = User.shared
         
-        user.loadFromCoreData()
+        user.load()
         
         print(user.points)
         

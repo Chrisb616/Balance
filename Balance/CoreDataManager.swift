@@ -57,6 +57,8 @@ class CoreDataManager {
         }
     }
     
+    //MARK: - Existing Entities
+    
     static var storedUser: StoredUser? {
         let context = persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<StoredUser> = StoredUser.fetchRequest()
@@ -69,12 +71,12 @@ class CoreDataManager {
 
     }
     
+    //MARK: - Save Data
+    
     static func saveUser(_ user: User) {
         let context = persistentContainer.viewContext
         
-        if let existingUserData = CoreDataManager.storedUser {
-            context.delete(existingUserData)
-        }
+        clearStoredUserData()
         
         let storedUser = StoredUser(context: context)
         
@@ -83,4 +85,21 @@ class CoreDataManager {
         
         saveContext()
     }
+    
+    //MARK: - Clear Data
+    
+    static func clearAllData() {
+        clearStoredUserData()
+    }
+    
+    static func clearStoredUserData() {
+        let context = persistentContainer.viewContext
+        
+        if let existingUserData = CoreDataManager.storedUser {
+            context.delete(existingUserData)
+        }
+        
+        saveContext()
+    }
+
 }

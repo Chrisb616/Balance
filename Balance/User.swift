@@ -19,7 +19,8 @@ class User {
 
 extension User {
     
-    func loadFromCoreData() {
+    //Save and Load
+    func load() {
         
         if let storedUser = CoreDataManager.storedUser {
             
