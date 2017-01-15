@@ -19,19 +19,33 @@ class PlayerCreationViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-         heroIsBornEvent()
+        setUpBackground()
+        
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (timer) in
+            self.heroIsBornEvent()
+        }
+    }
+    
+    func setUpBackground() {
+        
+        self.view.backgroundColor = Theme.colorForestGreen
+        
     }
     
     func heroIsBornEvent() {
         var event = Event(uniqueID: "HeroIsBorn")
         
-        event.add(description: "Awaken, my child.", visualKey: "HERO-START-01")
-        event.add(description: "I have seen your destiny, mortal one. You will be a hero among your people. You will be brave, honest, and good. It is foretold...", visualKey: "HER0-START-02")
+        event.add(description: "Awaken,$$$ my child.", visualKey: "HERO-START-01")
+        event.add(description: "I have seen your destiny.", visualKey: "HER0-START-01")
+        event.add(description: "Come with me,$$$$ and see what has been foretold$.$$$.$$$$$.", visualKey: "HER0-START-01")
         
         let eventViewController = EventViewController()
         
+        let modalStyle: UIModalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        eventViewController.modalTransitionStyle = modalStyle
         eventViewController.event = event
         
+        modalPresentationStyle = .popover
         present(eventViewController, animated: true)
         
     }

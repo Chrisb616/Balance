@@ -20,7 +20,7 @@ class EventViewController: UIViewController {
     
     var typingTimer: Timer!
     var isTyping: Bool = false
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,17 +29,17 @@ class EventViewController: UIViewController {
         setUpMessageBox()
         setUpButton()
         
-        print("")
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         typeOut(event.retrieve(at: 0)!.description)
+        
     }
     
     func setUpBackground(){
         
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.clear
         
     }
     func setUpVisuals() {
@@ -71,7 +71,7 @@ class EventViewController: UIViewController {
         messageTextView.backgroundColor = UIColor.clear
         messageTextView.isEditable = false
         messageTextView.isSelectable = false
-        messageTextView.font = UIFont(name: "AvenirNext-Regular", size: 30)
+        messageTextView.font = Theme.fontMedium
         
         self.messageView.addSubview(messageTextView)
         
@@ -118,17 +118,20 @@ class EventViewController: UIViewController {
         let characterArray = description.characterArray
         var characterIndex = 0
         
-        typingTimer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { (timer) in
-            while characterArray[characterIndex] == " " {
-                self.messageTextView.text.append(" ")
-                characterIndex += 1
-                if characterIndex == characterArray.count {
-                    timer.invalidate()
-                    self.isTyping = false
-                    return
+        
+        typingTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (timer) in
+            if characterArray[characterIndex] != "$" {
+                while characterArray[characterIndex] == " " {
+                    self.messageTextView.text.append(" ")
+                    characterIndex += 1
+                    if characterIndex == characterArray.count {
+                        timer.invalidate()
+                        self.isTyping = false
+                        return
+                    }
                 }
+                self.messageTextView.text.append(characterArray[characterIndex])
             }
-            self.messageTextView.text.append(characterArray[characterIndex])
             characterIndex += 1
             if characterIndex == characterArray.count {
                 timer.invalidate()
