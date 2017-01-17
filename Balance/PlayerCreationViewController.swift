@@ -8,9 +8,9 @@
 
 import UIKit
 
-class PlayerCreationViewController: UIViewController {
+class PlayerCreationViewController: UIViewController, EventDelegate {
     
-    
+    var eventWindow: EventWindow?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,15 +39,14 @@ class PlayerCreationViewController: UIViewController {
         event.add(description: "I have seen your destiny.", visualKey: "HER0-START-01")
         event.add(description: "Come with me,$$$$ and see what has been foretold$.$$$.$$$$$.", visualKey: "HER0-START-01")
         
-        let eventViewController = EventViewController()
+        eventWindow = EventWindow(event: event)
+        eventWindow?.delegate = self
         
-        let modalStyle: UIModalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        eventViewController.modalTransitionStyle = modalStyle
-        eventViewController.event = event
-        
-        modalPresentationStyle = .popover
-        present(eventViewController, animated: true)
-        
+        layoutWindow()
+        fadeInWindow(withDuration: 5)
     }
 
+    func windowDismissed() {
+        
+    }
 }

@@ -12,10 +12,12 @@
 		1B17EE9E1E2A8947008DA7D0 /* MultipleGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */; };
 		1B17EEA01E2A8D79008DA7D0 /* PlayerCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE9F1E2A8D79008DA7D0 /* PlayerCreationViewController.swift */; };
 		1B17EEA91E2A8F2F008DA7D0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEA81E2A8F2F008DA7D0 /* Event.swift */; };
-		1B17EEAD1E2A8F56008DA7D0 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEAC1E2A8F56008DA7D0 /* EventViewController.swift */; };
+		1B17EEAD1E2A8F56008DA7D0 /* EventWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEAC1E2A8F56008DA7D0 /* EventWindow.swift */; };
 		1B17EEB01E2AA7DD008DA7D0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEAF1E2AA7DD008DA7D0 /* String.swift */; };
 		1B17EEB41E2AB2D2008DA7D0 /* kongtext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B17EEB31E2AB2CD008DA7D0 /* kongtext.ttf */; };
 		1B17EEBA1E2AB752008DA7D0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEB91E2AB752008DA7D0 /* Theme.swift */; };
+		1B17EEE31E2BD36D008DA7D0 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEE21E2BD36D008DA7D0 /* AudioManager.swift */; };
+		1B17EEE71E2BD4C0008DA7D0 /* EventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEE61E2BD4C0008DA7D0 /* EventDelegate.swift */; };
 		1B1E29D81E28758B00D4F4F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */; };
 		1B1E29DA1E28758B00D4F4F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29D91E28758B00D4F4F9 /* RootViewController.swift */; };
 		1B1E29E01E28758B00D4F4F9 /* Balance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29DE1E28758B00D4F4F9 /* Balance.xcdatamodeld */; };
@@ -31,10 +33,12 @@
 		1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleGoal.swift; sourceTree = "<group>"; };
 		1B17EE9F1E2A8D79008DA7D0 /* PlayerCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCreationViewController.swift; sourceTree = "<group>"; };
 		1B17EEA81E2A8F2F008DA7D0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		1B17EEAC1E2A8F56008DA7D0 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		1B17EEAC1E2A8F56008DA7D0 /* EventWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventWindow.swift; sourceTree = "<group>"; };
 		1B17EEAF1E2AA7DD008DA7D0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		1B17EEB31E2AB2CD008DA7D0 /* kongtext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = kongtext.ttf; path = ../../../../Downloads/kongtext/kongtext.ttf; sourceTree = "<group>"; };
 		1B17EEB91E2AB752008DA7D0 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1B17EEE21E2BD36D008DA7D0 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		1B17EEE61E2BD4C0008DA7D0 /* EventDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDelegate.swift; sourceTree = "<group>"; };
 		1B1E29D41E28758B00D4F4F9 /* Balance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Balance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B1E29D91E28758B00D4F4F9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -68,8 +72,9 @@
 		1B17EEAE1E2A9548008DA7D0 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				1B17EEAC1E2A8F56008DA7D0 /* EventViewController.swift */,
+				1B17EEAC1E2A8F56008DA7D0 /* EventWindow.swift */,
 				1B17EEA81E2A8F2F008DA7D0 /* Event.swift */,
+				1B17EEE61E2BD4C0008DA7D0 /* EventDelegate.swift */,
 			);
 			name = Event;
 			sourceTree = "<group>";
@@ -88,6 +93,25 @@
 				1B17EEB91E2AB752008DA7D0 /* Theme.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		1B17EEDE1E2BC74B008DA7D0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E29F21E2A6A1E00D4F4F9 /* CoreDataManager.swift */,
+				1B1E29DE1E28758B00D4F4F9 /* Balance.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		1B17EEDF1E2BC755008DA7D0 /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				1B17EE991E2A87A4008DA7D0 /* Goal.swift */,
+				1B17EE9B1E2A881F008DA7D0 /* OneTimeGoal.swift */,
+				1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */,
+			);
+			name = Goal;
 			sourceTree = "<group>";
 		};
 		1B1E29CB1E28758A00D4F4F9 = {
@@ -114,17 +138,15 @@
 				1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */,
 				1B1E29D91E28758B00D4F4F9 /* RootViewController.swift */,
 				1B1E29F01E2A692600D4F4F9 /* User.swift */,
-				1B1E29F21E2A6A1E00D4F4F9 /* CoreDataManager.swift */,
+				1B17EEDE1E2BC74B008DA7D0 /* CoreData */,
 				1B1E29E11E28758B00D4F4F9 /* Assets.xcassets */,
 				1B1E29E31E28758B00D4F4F9 /* LaunchScreen.storyboard */,
 				1B1E29E61E28758B00D4F4F9 /* Info.plist */,
-				1B1E29DE1E28758B00D4F4F9 /* Balance.xcdatamodeld */,
-				1B17EE991E2A87A4008DA7D0 /* Goal.swift */,
-				1B17EE9B1E2A881F008DA7D0 /* OneTimeGoal.swift */,
-				1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */,
+				1B17EEDF1E2BC755008DA7D0 /* Goal */,
 				1B17EEAE1E2A9548008DA7D0 /* Event */,
 				1B17EEA11E2A8E36008DA7D0 /* PlayerCreation */,
 				1B17EEB51E2AB730008DA7D0 /* Extensions */,
+				1B17EEE21E2BD36D008DA7D0 /* AudioManager.swift */,
 			);
 			path = Balance;
 			sourceTree = "<group>";
@@ -203,13 +225,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B17EEA01E2A8D79008DA7D0 /* PlayerCreationViewController.swift in Sources */,
-				1B17EEAD1E2A8F56008DA7D0 /* EventViewController.swift in Sources */,
+				1B17EEAD1E2A8F56008DA7D0 /* EventWindow.swift in Sources */,
+				1B17EEE71E2BD4C0008DA7D0 /* EventDelegate.swift in Sources */,
 				1B17EEB01E2AA7DD008DA7D0 /* String.swift in Sources */,
 				1B1E29F11E2A692600D4F4F9 /* User.swift in Sources */,
 				1B17EEBA1E2AB752008DA7D0 /* Theme.swift in Sources */,
 				1B1E29DA1E28758B00D4F4F9 /* RootViewController.swift in Sources */,
 				1B17EE9C1E2A881F008DA7D0 /* OneTimeGoal.swift in Sources */,
 				1B17EEA91E2A8F2F008DA7D0 /* Event.swift in Sources */,
+				1B17EEE31E2BD36D008DA7D0 /* AudioManager.swift in Sources */,
 				1B1E29D81E28758B00D4F4F9 /* AppDelegate.swift in Sources */,
 				1B17EE9E1E2A8947008DA7D0 /* MultipleGoal.swift in Sources */,
 				1B1E29F31E2A6A1E00D4F4F9 /* CoreDataManager.swift in Sources */,

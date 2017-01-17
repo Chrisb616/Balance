@@ -1,5 +1,5 @@
 //
-//  EventViewController.swift
+//  EventWindow.swift
 //  Balance
 //
 //  Created by Christopher Boynton on 1/14/17.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class EventViewController: UIViewController {
+class EventWindow: UIView {
     
-    var event: Event!
+    var event: Event
     var currentSlide: Int = 0
     
     var visualsWindow = UIView()
@@ -21,9 +21,15 @@ class EventViewController: UIViewController {
     var typingTimer: Timer!
     var isTyping: Bool = false
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    weak var delegate: EventDelegate?
+    
+    init(event: Event) {
+        self.event = event
         
+        
+        super.init(frame: CGRect.zero)
+        
+        self.alpha = 0
         setUpBackground()
         setUpVisuals()
         setUpMessageBox()
@@ -31,15 +37,27 @@ class EventViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
-        typeOut(event.retrieve(at: 0)!.description)
         
+        visualsWindow.frame = CGRect(x: 10, y: 20, width: self.frame.width - 20, height: self.frame.width - 20)
+        messageView.frame = CGRect(x: 10, y: self.frame.width + 10, width: self.frame.width - 20, height: self.frame.height * 0.85 - self.frame.width - 20)
+        messageTextView.frame = CGRect(x: 3, y: 3, width: messageView.frame.width - 6, height: messageView.frame.height - 6)
+        
+        advanceButton.frame = CGRect(x: self.frame.width * 0.25, y: self.frame.height * 0.85, width: self.frame.width * 0.5, height: self.frame.height * 0.075)
     }
     
     func setUpBackground(){
         
-        self.view.backgroundColor = UIColor.clear
+        self.backgroundColor = UIColor.clear
+        self.layer.cornerRadius = 10
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderWidth = 5
         
     }
     func setUpVisuals() {
@@ -50,9 +68,8 @@ class EventViewController: UIViewController {
         visualsWindow.layer.borderWidth = 5
         visualsWindow.layer.borderColor = UIColor.darkGray.cgColor
         
-        self.view.addSubview(visualsWindow)
+        self.addSubview(visualsWindow)
         
-        visualsWindow.frame = CGRect(x: 10, y: 20, width: self.view.frame.width - 20, height: self.view.frame.width - 20)
         
         
     }
@@ -64,9 +81,8 @@ class EventViewController: UIViewController {
         messageView.layer.borderWidth = 5
         messageView.layer.borderColor = UIColor.darkGray.cgColor
         
-        self.view.addSubview(messageView)
+        self.addSubview(messageView)
         
-        messageView.frame = CGRect(x: 10, y: self.view.frame.width + 10, width: self.view.frame.width - 20, height: self.view.frame.height * 0.85 - self.view.frame.width - 20)
         
         messageTextView.backgroundColor = UIColor.clear
         messageTextView.isEditable = false
@@ -75,7 +91,6 @@ class EventViewController: UIViewController {
         
         self.messageView.addSubview(messageTextView)
         
-        messageTextView.frame = CGRect(x: 3, y: 3, width: messageView.frame.width - 6, height: messageView.frame.height - 6)
         
     }
     func setUpButton() {
@@ -85,9 +100,8 @@ class EventViewController: UIViewController {
         advanceButton.layer.borderWidth = 5
         advanceButton.layer.borderColor = UIColor.darkGray.cgColor
         
-        self.view.addSubview(advanceButton)
+        self.addSubview(advanceButton)
         
-        advanceButton.frame = CGRect(x: self.view.frame.width * 0.25, y: self.view.frame.height * 0.85, width: self.view.frame.width * 0.5, height: self.view.frame.height * 0.075)
         
         advanceButton.addTarget(self, action: #selector(advanceButtonTapped), for: .touchUpInside)
         
@@ -105,10 +119,15 @@ class EventViewController: UIViewController {
                 typeOut(slide.description)
                 
             } else {
-                dismiss(animated: true)
+                print("Should fade...")
+                delegate?.fadeOutWindow(withDuration: 5)
             }
         }
         
+    }
+    
+    func beginMessage() {
+        typeOut(event.retrieve(at: 0)!.description)
     }
     
     func typeOut(_ description: String) {
