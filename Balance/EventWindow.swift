@@ -100,6 +100,8 @@ class EventWindow: UIView {
         advanceButton.layer.borderWidth = 5
         advanceButton.layer.borderColor = UIColor.darkGray.cgColor
         
+        advanceButton.titleLabel?.font = Theme.fontMedium
+        
         self.addSubview(advanceButton)
         
         
@@ -109,12 +111,17 @@ class EventWindow: UIView {
     func advanceButtonTapped() {
         if isTyping {
             typingTimer.invalidate()
-            messageTextView.text = event.retrieve(at: currentSlide)!.description
-            isTyping = false
-        } else {
             messageTextView.text = ""
+            for character in event.retrieve(at: currentSlide)!.description.characterArray {
+                if character != "$" {
+                    messageTextView.text.append(character)
+                }
+            }
+            typingFinished()
+        } else {
             currentSlide += 1
             if currentSlide < event.count {
+                messageTextView.text = ""
                 guard let slide = event.retrieve(at: currentSlide) else { return }
                 typeOut(slide.description)
                 
@@ -122,6 +129,7 @@ class EventWindow: UIView {
                 print("Should fade...")
                 delegate?.fadeOutWindow(withDuration: 5)
             }
+            advanceButton.setTitle("", for: .normal)
         }
         
     }
@@ -145,7 +153,7 @@ class EventWindow: UIView {
                     characterIndex += 1
                     if characterIndex == characterArray.count {
                         timer.invalidate()
-                        self.isTyping = false
+                        self.typingFinished()
                         return
                     }
                 }
@@ -154,11 +162,17 @@ class EventWindow: UIView {
             characterIndex += 1
             if characterIndex == characterArray.count {
                 timer.invalidate()
-                self.isTyping = false
+                self.typingFinished()
                 return
             }
         }
         
+    }
+    
+    func typingFinished() {
+        self.isTyping = false
+        
+        advanceButton.setTitle("Next", for: .normal)
     }
     
 
