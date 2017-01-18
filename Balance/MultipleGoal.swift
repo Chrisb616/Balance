@@ -16,7 +16,7 @@ struct MultipleGoal: Goal {
     var payout: Int
     
     var goalNumber: Int
-    var progressNumber: Int
+    var currentNumber: Int
     
     var dateSet: Date
     var dateCompleted: Date?
@@ -26,7 +26,7 @@ struct MultipleGoal: Goal {
         self.description = description
         self.payout = payout
         self.goalNumber = goalNumber
-        self.progressNumber = 0
+        self.currentNumber = 0
         self.dateSet = dateSet
         self.dateCompleted = dateCompleted
     }
@@ -37,9 +37,9 @@ extension MultipleGoal {
     
     var progress: Double {
         let goalDouble = Double(goalNumber)
-        let progressDouble = Double(progressNumber)
+        let currentDouble = Double(currentNumber)
         
-        return progressDouble / goalDouble
+        return currentDouble / goalDouble
     }
     
 }

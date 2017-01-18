@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B17EE9A1E2A87A4008DA7D0 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE991E2A87A4008DA7D0 /* Goal.swift */; };
-		1B17EE9C1E2A881F008DA7D0 /* OneTimeGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE9B1E2A881F008DA7D0 /* OneTimeGoal.swift */; };
+		1B17EE9C1E2A881F008DA7D0 /* SingleGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE9B1E2A881F008DA7D0 /* SingleGoal.swift */; };
 		1B17EE9E1E2A8947008DA7D0 /* MultipleGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */; };
 		1B17EEA01E2A8D79008DA7D0 /* PlayerCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EE9F1E2A8D79008DA7D0 /* PlayerCreationViewController.swift */; };
 		1B17EEA91E2A8F2F008DA7D0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEA81E2A8F2F008DA7D0 /* Event.swift */; };
@@ -25,11 +25,12 @@
 		1B1E29E51E28758B00D4F4F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1E29E31E28758B00D4F4F9 /* LaunchScreen.storyboard */; };
 		1B1E29F11E2A692600D4F4F9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29F01E2A692600D4F4F9 /* User.swift */; };
 		1B1E29F31E2A6A1E00D4F4F9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29F21E2A6A1E00D4F4F9 /* CoreDataManager.swift */; };
+		1B24FD661E2F101800A7B5B5 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD651E2F101800A7B5B5 /* Reward.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B17EE991E2A87A4008DA7D0 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
-		1B17EE9B1E2A881F008DA7D0 /* OneTimeGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTimeGoal.swift; sourceTree = "<group>"; };
+		1B17EE9B1E2A881F008DA7D0 /* SingleGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleGoal.swift; sourceTree = "<group>"; };
 		1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleGoal.swift; sourceTree = "<group>"; };
 		1B17EE9F1E2A8D79008DA7D0 /* PlayerCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCreationViewController.swift; sourceTree = "<group>"; };
 		1B17EEA81E2A8F2F008DA7D0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		1B1E29E61E28758B00D4F4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B1E29F01E2A692600D4F4F9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1B1E29F21E2A6A1E00D4F4F9 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1B24FD651E2F101800A7B5B5 /* Reward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				1B17EE991E2A87A4008DA7D0 /* Goal.swift */,
-				1B17EE9B1E2A881F008DA7D0 /* OneTimeGoal.swift */,
+				1B17EE9B1E2A881F008DA7D0 /* SingleGoal.swift */,
 				1B17EE9D1E2A8947008DA7D0 /* MultipleGoal.swift */,
 			);
 			name = Goal;
@@ -142,6 +144,7 @@
 				1B1E29E11E28758B00D4F4F9 /* Assets.xcassets */,
 				1B1E29E31E28758B00D4F4F9 /* LaunchScreen.storyboard */,
 				1B1E29E61E28758B00D4F4F9 /* Info.plist */,
+				1B24FD641E2F0FFE00A7B5B5 /* Reward */,
 				1B17EEDF1E2BC755008DA7D0 /* Goal */,
 				1B17EEAE1E2A9548008DA7D0 /* Event */,
 				1B17EEA11E2A8E36008DA7D0 /* PlayerCreation */,
@@ -149,6 +152,14 @@
 				1B17EEE21E2BD36D008DA7D0 /* AudioManager.swift */,
 			);
 			path = Balance;
+			sourceTree = "<group>";
+		};
+		1B24FD641E2F0FFE00A7B5B5 /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				1B24FD651E2F101800A7B5B5 /* Reward.swift */,
+			);
+			name = Reward;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +242,12 @@
 				1B1E29F11E2A692600D4F4F9 /* User.swift in Sources */,
 				1B17EEBA1E2AB752008DA7D0 /* Theme.swift in Sources */,
 				1B1E29DA1E28758B00D4F4F9 /* RootViewController.swift in Sources */,
-				1B17EE9C1E2A881F008DA7D0 /* OneTimeGoal.swift in Sources */,
+				1B17EE9C1E2A881F008DA7D0 /* SingleGoal.swift in Sources */,
 				1B17EEA91E2A8F2F008DA7D0 /* Event.swift in Sources */,
 				1B17EEE31E2BD36D008DA7D0 /* AudioManager.swift in Sources */,
 				1B1E29D81E28758B00D4F4F9 /* AppDelegate.swift in Sources */,
 				1B17EE9E1E2A8947008DA7D0 /* MultipleGoal.swift in Sources */,
+				1B24FD661E2F101800A7B5B5 /* Reward.swift in Sources */,
 				1B1E29F31E2A6A1E00D4F4F9 /* CoreDataManager.swift in Sources */,
 				1B17EE9A1E2A87A4008DA7D0 /* Goal.swift in Sources */,
 				1B1E29E01E28758B00D4F4F9 /* Balance.xcdatamodeld in Sources */,

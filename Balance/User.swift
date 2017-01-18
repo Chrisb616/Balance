@@ -15,6 +15,8 @@ class User {
     
     var name = ""
     var points = 0
+    
+    var activeRewards = [Date:Reward]()
 }
 
 extension User {
@@ -38,6 +40,16 @@ extension User {
     
     func save() {
         CoreDataManager.saveUser(self)
+    }
+    
+    func buy(reward: Reward) -> Bool {
+        if points < reward.cost {
+            return false
+        } else {
+            activeRewards[reward.dateCompleted!] = reward
+            points -= reward.cost
+            return true
+        }
     }
     
 }

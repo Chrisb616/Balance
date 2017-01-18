@@ -1,5 +1,5 @@
 //
-//  OneTimeGoal.swift
+//  SingleGoal.swift
 //  Balance
 //
 //  Created by Christopher Boynton on 1/14/17.

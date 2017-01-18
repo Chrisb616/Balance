@@ -23,4 +23,12 @@ extension Goal {
     
     var isComplete: Bool { return dateCompleted != nil }
     
+    var duration: TimeInterval? {
+        if let completed = dateCompleted {
+            return completed.timeIntervalSince(dateSet)
+        } else {
+            return nil
+        }
+    }
+    
 }
