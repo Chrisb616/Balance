@@ -128,6 +128,7 @@ class EventWindow: UIView {
             } else {
                 print("Should fade...")
                 delegate?.fadeOutWindow(withDuration: 5)
+                delegate?.windowDismissed()
             }
             advanceButton.setTitle("", for: .normal)
         }

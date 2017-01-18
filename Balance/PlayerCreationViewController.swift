@@ -47,6 +47,6 @@ class PlayerCreationViewController: UIViewController, EventDelegate {
     }
 
     func windowDismissed() {
-        
+        present(ShopViewController(), animated: true, completion: nil)
     }
 }
