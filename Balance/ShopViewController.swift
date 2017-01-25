@@ -12,6 +12,8 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var availableRewards = [Reward]()
     
+    var headerView = UIView()
+    
     var shopListTableView: UITableView!
 
     override func viewDidLoad() {
@@ -19,7 +21,13 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         availableRewards = dummyData
         
+        setUpHeader()
         setUpTableView()
+        
+    }
+    
+    func setUpHeader() {
+        
         
     }
     
@@ -33,7 +41,7 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.view.addSubview(shopListTableView)
         
-        shopListTableView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        shopListTableView.frame = CGRect(x: 0, y: self.view.frame.height * 0.25, width: self.view.frame.width, height: self.view.frame.height * 0.75)
         shopListTableView.backgroundColor = UIColor.yellow
         
         shopListTableView.reloadData()
@@ -58,6 +66,8 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShopItemCell") as! ShopTableViewCell
+        
+        cell.setUpViews(for: availableRewards[indexPath.row])
         
         return cell
     }
