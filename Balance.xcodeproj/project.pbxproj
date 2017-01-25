@@ -26,6 +26,8 @@
 		1B1E29F11E2A692600D4F4F9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29F01E2A692600D4F4F9 /* User.swift */; };
 		1B1E29F31E2A6A1E00D4F4F9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E29F21E2A6A1E00D4F4F9 /* CoreDataManager.swift */; };
 		1B24FD661E2F101800A7B5B5 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD651E2F101800A7B5B5 /* Reward.swift */; };
+		1B24FD6C1E2FF46F00A7B5B5 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD6B1E2FF46F00A7B5B5 /* ShopViewController.swift */; };
+		1B24FD6F1E30019300A7B5B5 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD6E1E30019300A7B5B5 /* ShopTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		1B1E29F01E2A692600D4F4F9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1B1E29F21E2A6A1E00D4F4F9 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1B24FD651E2F101800A7B5B5 /* Reward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		1B24FD6B1E2FF46F00A7B5B5 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		1B24FD6E1E30019300A7B5B5 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +75,14 @@
 			name = PlayerCreation;
 			sourceTree = "<group>";
 		};
-		1B17EEAE1E2A9548008DA7D0 /* Event */ = {
+		1B17EEAE1E2A9548008DA7D0 /* EventWindow */ = {
 			isa = PBXGroup;
 			children = (
 				1B17EEAC1E2A8F56008DA7D0 /* EventWindow.swift */,
 				1B17EEA81E2A8F2F008DA7D0 /* Event.swift */,
 				1B17EEE61E2BD4C0008DA7D0 /* EventDelegate.swift */,
 			);
-			name = Event;
+			name = EventWindow;
 			sourceTree = "<group>";
 		};
 		1B17EEB51E2AB730008DA7D0 /* Extensions */ = {
@@ -138,15 +142,16 @@
 				1B17EEB81E2AB745008DA7D0 /* Constants */,
 				1B17EEB31E2AB2CD008DA7D0 /* kongtext.ttf */,
 				1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */,
-				1B1E29D91E28758B00D4F4F9 /* RootViewController.swift */,
 				1B1E29F01E2A692600D4F4F9 /* User.swift */,
 				1B17EEDE1E2BC74B008DA7D0 /* CoreData */,
 				1B1E29E11E28758B00D4F4F9 /* Assets.xcassets */,
 				1B1E29E31E28758B00D4F4F9 /* LaunchScreen.storyboard */,
 				1B1E29E61E28758B00D4F4F9 /* Info.plist */,
+				1B1E29D91E28758B00D4F4F9 /* RootViewController.swift */,
 				1B24FD641E2F0FFE00A7B5B5 /* Reward */,
+				1B24FD6D1E30014500A7B5B5 /* Shop */,
 				1B17EEDF1E2BC755008DA7D0 /* Goal */,
-				1B17EEAE1E2A9548008DA7D0 /* Event */,
+				1B17EEAE1E2A9548008DA7D0 /* EventWindow */,
 				1B17EEA11E2A8E36008DA7D0 /* PlayerCreation */,
 				1B17EEB51E2AB730008DA7D0 /* Extensions */,
 				1B17EEE21E2BD36D008DA7D0 /* AudioManager.swift */,
@@ -160,6 +165,15 @@
 				1B24FD651E2F101800A7B5B5 /* Reward.swift */,
 			);
 			name = Reward;
+			sourceTree = "<group>";
+		};
+		1B24FD6D1E30014500A7B5B5 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				1B24FD6B1E2FF46F00A7B5B5 /* ShopViewController.swift */,
+				1B24FD6E1E30019300A7B5B5 /* ShopTableViewCell.swift */,
+			);
+			name = Shop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +251,7 @@
 			files = (
 				1B17EEA01E2A8D79008DA7D0 /* PlayerCreationViewController.swift in Sources */,
 				1B17EEAD1E2A8F56008DA7D0 /* EventWindow.swift in Sources */,
+				1B24FD6C1E2FF46F00A7B5B5 /* ShopViewController.swift in Sources */,
 				1B17EEE71E2BD4C0008DA7D0 /* EventDelegate.swift in Sources */,
 				1B17EEB01E2AA7DD008DA7D0 /* String.swift in Sources */,
 				1B1E29F11E2A692600D4F4F9 /* User.swift in Sources */,
@@ -249,6 +264,7 @@
 				1B17EE9E1E2A8947008DA7D0 /* MultipleGoal.swift in Sources */,
 				1B24FD661E2F101800A7B5B5 /* Reward.swift in Sources */,
 				1B1E29F31E2A6A1E00D4F4F9 /* CoreDataManager.swift in Sources */,
+				1B24FD6F1E30019300A7B5B5 /* ShopTableViewCell.swift in Sources */,
 				1B17EE9A1E2A87A4008DA7D0 /* Goal.swift in Sources */,
 				1B1E29E01E28758B00D4F4F9 /* Balance.xcdatamodeld in Sources */,
 			);
