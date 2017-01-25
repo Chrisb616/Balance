@@ -14,7 +14,6 @@
 		1B17EEA91E2A8F2F008DA7D0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEA81E2A8F2F008DA7D0 /* Event.swift */; };
 		1B17EEAD1E2A8F56008DA7D0 /* EventWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEAC1E2A8F56008DA7D0 /* EventWindow.swift */; };
 		1B17EEB01E2AA7DD008DA7D0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEAF1E2AA7DD008DA7D0 /* String.swift */; };
-		1B17EEB41E2AB2D2008DA7D0 /* kongtext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B17EEB31E2AB2CD008DA7D0 /* kongtext.ttf */; };
 		1B17EEBA1E2AB752008DA7D0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEB91E2AB752008DA7D0 /* Theme.swift */; };
 		1B17EEE31E2BD36D008DA7D0 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEE21E2BD36D008DA7D0 /* AudioManager.swift */; };
 		1B17EEE71E2BD4C0008DA7D0 /* EventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17EEE61E2BD4C0008DA7D0 /* EventDelegate.swift */; };
@@ -28,6 +27,7 @@
 		1B24FD661E2F101800A7B5B5 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD651E2F101800A7B5B5 /* Reward.swift */; };
 		1B24FD6C1E2FF46F00A7B5B5 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD6B1E2FF46F00A7B5B5 /* ShopViewController.swift */; };
 		1B24FD6F1E30019300A7B5B5 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD6E1E30019300A7B5B5 /* ShopTableViewCell.swift */; };
+		9D09497E1E38F46200EB151F /* kongtext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D09497D1E38F45900EB151F /* kongtext.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,6 @@
 		1B17EEA81E2A8F2F008DA7D0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		1B17EEAC1E2A8F56008DA7D0 /* EventWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventWindow.swift; sourceTree = "<group>"; };
 		1B17EEAF1E2AA7DD008DA7D0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		1B17EEB31E2AB2CD008DA7D0 /* kongtext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = kongtext.ttf; path = ../../../../Downloads/kongtext/kongtext.ttf; sourceTree = "<group>"; };
 		1B17EEB91E2AB752008DA7D0 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1B17EEE21E2BD36D008DA7D0 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		1B17EEE61E2BD4C0008DA7D0 /* EventDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		1B24FD651E2F101800A7B5B5 /* Reward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		1B24FD6B1E2FF46F00A7B5B5 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		1B24FD6E1E30019300A7B5B5 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
+		9D09497D1E38F45900EB151F /* kongtext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kongtext.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +139,8 @@
 		1B1E29D61E28758B00D4F4F9 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
+				9D09497D1E38F45900EB151F /* kongtext.ttf */,
 				1B17EEB81E2AB745008DA7D0 /* Constants */,
-				1B17EEB31E2AB2CD008DA7D0 /* kongtext.ttf */,
 				1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */,
 				1B1E29F01E2A692600D4F4F9 /* User.swift */,
 				1B17EEDE1E2BC74B008DA7D0 /* CoreData */,
@@ -237,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1E29E51E28758B00D4F4F9 /* LaunchScreen.storyboard in Resources */,
-				1B17EEB41E2AB2D2008DA7D0 /* kongtext.ttf in Resources */,
+				9D09497E1E38F46200EB151F /* kongtext.ttf in Resources */,
 				1B1E29E21E28758B00D4F4F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
