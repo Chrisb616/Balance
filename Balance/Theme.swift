@@ -13,7 +13,7 @@ struct Theme {
     private init() {}
     
     static let colorForestGreen = UIColor(colorLiteralRed: 34/255, green: 139/255, blue: 34/255, alpha: 1)
-    
+    static let colorGold = UIColor(colorLiteralRed: 255/255, green: 215/255, blue: 0/255, alpha: 1)
     
     
     static let fontMedium = UIFont(name: "Kongtext", size: 20)!

@@ -28,6 +28,9 @@
 		1B24FD6C1E2FF46F00A7B5B5 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD6B1E2FF46F00A7B5B5 /* ShopViewController.swift */; };
 		1B24FD6F1E30019300A7B5B5 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24FD6E1E30019300A7B5B5 /* ShopTableViewCell.swift */; };
 		9D09497E1E38F46200EB151F /* kongtext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D09497D1E38F45900EB151F /* kongtext.ttf */; };
+		9D0949811E38F7B400EB151F /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0949801E38F7B400EB151F /* MainMenuViewController.swift */; };
+		9D0949831E38F84800EB151F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0949821E38F84800EB151F /* Main.storyboard */; };
+		9D0949891E39049200EB151F /* themeV001.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D0949881E39049200EB151F /* themeV001.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		1B24FD6B1E2FF46F00A7B5B5 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		1B24FD6E1E30019300A7B5B5 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
 		9D09497D1E38F45900EB151F /* kongtext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kongtext.ttf; sourceTree = "<group>"; };
+		9D0949801E38F7B400EB151F /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		9D0949821E38F84800EB151F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9D0949881E39049200EB151F /* themeV001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = themeV001.wav; path = Music/themeV001.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +145,10 @@
 		1B1E29D61E28758B00D4F4F9 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
+				9D09497F1E38F78500EB151F /* MainMenu */,
 				9D09497D1E38F45900EB151F /* kongtext.ttf */,
+				9D0949881E39049200EB151F /* themeV001.wav */,
+				9D0949821E38F84800EB151F /* Main.storyboard */,
 				1B17EEB81E2AB745008DA7D0 /* Constants */,
 				1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */,
 				1B1E29F01E2A692600D4F4F9 /* User.swift */,
@@ -174,6 +183,14 @@
 				1B24FD6E1E30019300A7B5B5 /* ShopTableViewCell.swift */,
 			);
 			name = Shop;
+			sourceTree = "<group>";
+		};
+		9D09497F1E38F78500EB151F /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9D0949801E38F7B400EB151F /* MainMenuViewController.swift */,
+			);
+			name = MainMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +256,8 @@
 				1B1E29E51E28758B00D4F4F9 /* LaunchScreen.storyboard in Resources */,
 				9D09497E1E38F46200EB151F /* kongtext.ttf in Resources */,
 				1B1E29E21E28758B00D4F4F9 /* Assets.xcassets in Resources */,
+				9D0949831E38F84800EB151F /* Main.storyboard in Resources */,
+				9D0949891E39049200EB151F /* themeV001.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +285,7 @@
 				1B1E29F31E2A6A1E00D4F4F9 /* CoreDataManager.swift in Sources */,
 				1B24FD6F1E30019300A7B5B5 /* ShopTableViewCell.swift in Sources */,
 				1B17EE9A1E2A87A4008DA7D0 /* Goal.swift in Sources */,
+				9D0949811E38F7B400EB151F /* MainMenuViewController.swift in Sources */,
 				1B1E29E01E28758B00D4F4F9 /* Balance.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
