@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="256.80000000000001" y="144.3778110944528"/>
         </scene>
-        <!--View Controller-->
+        <!--User Landing View Controller-->
         <scene sceneID="u2R-Ho-Nge">
             <objects>
-                <viewController id="Ogq-FH-bre" sceneMemberID="viewController">
+                <viewController id="Ogq-FH-bre" customClass="UserLandingViewController" customModule="Balance" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a32-MM-4s6"/>
                         <viewControllerLayoutGuide type="bottom" id="khC-rV-mcN"/>
@@ -194,6 +194,9 @@
                             <constraint firstItem="XQV-5f-iaR" firstAttribute="top" secondItem="gFe-wt-ncr" secondAttribute="bottom" constant="20" id="x81-Ap-FVD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userInfoContainer" destination="ggY-gE-5lZ" id="82B-ZF-dNV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ife-gI-aEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

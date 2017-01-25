@@ -31,6 +31,11 @@
 		9D0949811E38F7B400EB151F /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0949801E38F7B400EB151F /* MainMenuViewController.swift */; };
 		9D0949831E38F84800EB151F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0949821E38F84800EB151F /* Main.storyboard */; };
 		9D0949891E39049200EB151F /* themeV001.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D0949881E39049200EB151F /* themeV001.wav */; };
+		9D09498C1E39387700EB151F /* UserLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D09498B1E39387700EB151F /* UserLandingViewController.swift */; };
+		9D09498E1E393A1700EB151F /* UserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D09498D1E393A1700EB151F /* UserInfoView.xib */; };
+		9D0949911E3944FB00EB151F /* orange kid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D0949901E3944F200EB151F /* orange kid.ttf */; };
+		9D0949931E394D5500EB151F /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0949921E394D5500EB151F /* UserInfoView.swift */; };
+		9D0949951E39545A00EB151F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0949941E39545A00EB151F /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,11 @@
 		9D0949801E38F7B400EB151F /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		9D0949821E38F84800EB151F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9D0949881E39049200EB151F /* themeV001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = themeV001.wav; path = Music/themeV001.wav; sourceTree = "<group>"; };
+		9D09498B1E39387700EB151F /* UserLandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLandingViewController.swift; sourceTree = "<group>"; };
+		9D09498D1E393A1700EB151F /* UserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoView.xib; sourceTree = "<group>"; };
+		9D0949901E3944F200EB151F /* orange kid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orange kid.ttf"; sourceTree = "<group>"; };
+		9D0949921E394D5500EB151F /* UserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		9D0949941E39545A00EB151F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +155,14 @@
 		1B1E29D61E28758B00D4F4F9 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
-				9D09497F1E38F78500EB151F /* MainMenu */,
+				9D09497F1E38F78500EB151F /* ViewControllers */,
 				9D09497D1E38F45900EB151F /* kongtext.ttf */,
+				9D0949901E3944F200EB151F /* orange kid.ttf */,
 				9D0949881E39049200EB151F /* themeV001.wav */,
 				9D0949821E38F84800EB151F /* Main.storyboard */,
+				9D0949941E39545A00EB151F /* UIView.swift */,
+				9D09498D1E393A1700EB151F /* UserInfoView.xib */,
+				9D0949921E394D5500EB151F /* UserInfoView.swift */,
 				1B17EEB81E2AB745008DA7D0 /* Constants */,
 				1B1E29D71E28758B00D4F4F9 /* AppDelegate.swift */,
 				1B1E29F01E2A692600D4F4F9 /* User.swift */,
@@ -185,12 +199,13 @@
 			name = Shop;
 			sourceTree = "<group>";
 		};
-		9D09497F1E38F78500EB151F /* MainMenu */ = {
+		9D09497F1E38F78500EB151F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				9D0949801E38F7B400EB151F /* MainMenuViewController.swift */,
+				9D09498B1E39387700EB151F /* UserLandingViewController.swift */,
 			);
-			name = MainMenu;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +271,9 @@
 				1B1E29E51E28758B00D4F4F9 /* LaunchScreen.storyboard in Resources */,
 				9D09497E1E38F46200EB151F /* kongtext.ttf in Resources */,
 				1B1E29E21E28758B00D4F4F9 /* Assets.xcassets in Resources */,
+				9D09498E1E393A1700EB151F /* UserInfoView.xib in Resources */,
 				9D0949831E38F84800EB151F /* Main.storyboard in Resources */,
+				9D0949911E3944FB00EB151F /* orange kid.ttf in Resources */,
 				9D0949891E39049200EB151F /* themeV001.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B17EEA01E2A8D79008DA7D0 /* PlayerCreationViewController.swift in Sources */,
+				9D09498C1E39387700EB151F /* UserLandingViewController.swift in Sources */,
+				9D0949951E39545A00EB151F /* UIView.swift in Sources */,
 				1B17EEAD1E2A8F56008DA7D0 /* EventWindow.swift in Sources */,
 				1B24FD6C1E2FF46F00A7B5B5 /* ShopViewController.swift in Sources */,
 				1B17EEE71E2BD4C0008DA7D0 /* EventDelegate.swift in Sources */,
@@ -282,6 +301,7 @@
 				1B1E29D81E28758B00D4F4F9 /* AppDelegate.swift in Sources */,
 				1B17EE9E1E2A8947008DA7D0 /* MultipleGoal.swift in Sources */,
 				1B24FD661E2F101800A7B5B5 /* Reward.swift in Sources */,
+				9D0949931E394D5500EB151F /* UserInfoView.swift in Sources */,
 				1B1E29F31E2A6A1E00D4F4F9 /* CoreDataManager.swift in Sources */,
 				1B24FD6F1E30019300A7B5B5 /* ShopTableViewCell.swift in Sources */,
 				1B17EE9A1E2A87A4008DA7D0 /* Goal.swift in Sources */,

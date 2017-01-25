@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="orange kid.ttf">
+            <string>OrangeKid-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserInfoView" customModule="Balance" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11c-ZC-f8l">
+                    <rect key="frame" x="154" y="20" width="124" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NE-OY-cnO">
+                    <rect key="frame" x="10" y="20.5" width="124" height="186.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8NE-OY-cnO" secondAttribute="height" multiplier="2:3" id="RmQ-IZ-cwE"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Str:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELz-mz-duM">
+                    <rect key="frame" x="154" y="45" width="34" height="22.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ELz-mz-duM" secondAttribute="height" multiplier="3:2" id="ycO-sh-Evj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAJ-sq-LIH">
+                    <rect key="frame" x="154" y="67.5" width="34" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQw-dy-iAU">
+                    <rect key="frame" x="154" y="90" width="34" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dex:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCY-3O-O8Y">
+                    <rect key="frame" x="154" y="112.5" width="34" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Int:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVc-lJ-XHp">
+                    <rect key="frame" x="154" y="135" width="34" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQx-hA-2FW">
+                    <rect key="frame" x="154" y="157.5" width="34" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wis:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVO-7e-Vog">
+                    <rect key="frame" x="154" y="180" width="34" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIb-ek-xu9">
+                    <rect key="frame" x="196" y="45" width="82" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVR-h6-9vm">
+                    <rect key="frame" x="196" y="67" width="82" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWa-4q-rHe">
+                    <rect key="frame" x="196" y="90" width="82" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ur0-Lv-6wi">
+                    <rect key="frame" x="196" y="112.5" width="82" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGX-EV-jhD">
+                    <rect key="frame" x="196" y="135" width="82" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-KT-KLg">
+                    <rect key="frame" x="196" y="157" width="82" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKk-Wt-DDC">
+                    <rect key="frame" x="196" y="180" width="82" height="22.5"/>
+                    <fontDescription key="fontDescription" name="OrangeKid-Regular" family="Orange Kid" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="IQx-hA-2FW" firstAttribute="leading" secondItem="hVc-lJ-XHp" secondAttribute="leading" id="0Dd-5I-h5K"/>
+                <constraint firstItem="kVO-7e-Vog" firstAttribute="width" secondItem="IQx-hA-2FW" secondAttribute="width" id="0LE-vV-mhd"/>
+                <constraint firstItem="mVR-h6-9vm" firstAttribute="leading" secondItem="rIb-ek-xu9" secondAttribute="leading" id="0iB-3S-ut6"/>
+                <constraint firstItem="8NE-OY-cnO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="2OT-dd-RJp"/>
+                <constraint firstItem="jAJ-sq-LIH" firstAttribute="leading" secondItem="ELz-mz-duM" secondAttribute="leading" id="3bn-Me-HR4"/>
+                <constraint firstItem="NCY-3O-O8Y" firstAttribute="leading" secondItem="uQw-dy-iAU" secondAttribute="leading" id="4gr-AJ-OuY"/>
+                <constraint firstItem="kVO-7e-Vog" firstAttribute="leading" secondItem="IQx-hA-2FW" secondAttribute="leading" id="6Uu-Ri-c5r"/>
+                <constraint firstItem="11c-ZC-f8l" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.1" id="8SF-nK-jGq"/>
+                <constraint firstItem="ZKk-Wt-DDC" firstAttribute="bottom" secondItem="kVO-7e-Vog" secondAttribute="bottom" id="Ad4-bu-jSz"/>
+                <constraint firstItem="8NE-OY-cnO" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" constant="-20" id="Aj7-Ox-TOp"/>
+                <constraint firstItem="3vw-KT-KLg" firstAttribute="bottom" secondItem="IQx-hA-2FW" secondAttribute="bottom" id="B3r-dB-do8"/>
+                <constraint firstItem="uQw-dy-iAU" firstAttribute="top" secondItem="jAJ-sq-LIH" secondAttribute="bottom" id="B4k-1I-Dku"/>
+                <constraint firstItem="hVc-lJ-XHp" firstAttribute="height" secondItem="NCY-3O-O8Y" secondAttribute="height" id="B6s-a4-l0e"/>
+                <constraint firstItem="hVc-lJ-XHp" firstAttribute="width" secondItem="NCY-3O-O8Y" secondAttribute="width" id="B90-Ja-870"/>
+                <constraint firstItem="nWa-4q-rHe" firstAttribute="top" secondItem="uQw-dy-iAU" secondAttribute="top" id="C83-kL-wBW"/>
+                <constraint firstItem="rIb-ek-xu9" firstAttribute="height" secondItem="ELz-mz-duM" secondAttribute="height" id="CBC-Fs-mVl"/>
+                <constraint firstItem="hVc-lJ-XHp" firstAttribute="leading" secondItem="NCY-3O-O8Y" secondAttribute="leading" id="Cvh-qi-C8a"/>
+                <constraint firstItem="IQx-hA-2FW" firstAttribute="height" secondItem="hVc-lJ-XHp" secondAttribute="height" id="GOh-e0-8Kn"/>
+                <constraint firstItem="uQw-dy-iAU" firstAttribute="width" secondItem="jAJ-sq-LIH" secondAttribute="width" id="Gzz-wn-uGn"/>
+                <constraint firstItem="lGX-EV-jhD" firstAttribute="bottom" secondItem="hVc-lJ-XHp" secondAttribute="bottom" id="Izp-Dd-WdB"/>
+                <constraint firstItem="rIb-ek-xu9" firstAttribute="centerY" secondItem="ELz-mz-duM" secondAttribute="centerY" id="KxY-SC-FQt"/>
+                <constraint firstItem="ZKk-Wt-DDC" firstAttribute="leading" secondItem="3vw-KT-KLg" secondAttribute="leading" id="LbY-Hb-avo"/>
+                <constraint firstItem="ur0-Lv-6wi" firstAttribute="bottom" secondItem="NCY-3O-O8Y" secondAttribute="bottom" id="Mk7-kP-UqN"/>
+                <constraint firstItem="11c-ZC-f8l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="10" id="Ohl-1v-yDK"/>
+                <constraint firstItem="3vw-KT-KLg" firstAttribute="top" secondItem="IQx-hA-2FW" secondAttribute="top" id="PYQ-zg-tiL"/>
+                <constraint firstItem="mVR-h6-9vm" firstAttribute="trailing" secondItem="rIb-ek-xu9" secondAttribute="trailing" id="QDA-Tb-mFH"/>
+                <constraint firstItem="3vw-KT-KLg" firstAttribute="trailing" secondItem="lGX-EV-jhD" secondAttribute="trailing" id="QGA-4R-uTs"/>
+                <constraint firstItem="ZKk-Wt-DDC" firstAttribute="top" secondItem="kVO-7e-Vog" secondAttribute="top" id="Ql3-aU-a94"/>
+                <constraint firstItem="lGX-EV-jhD" firstAttribute="top" secondItem="hVc-lJ-XHp" secondAttribute="top" id="RlR-KL-7MW"/>
+                <constraint firstItem="nWa-4q-rHe" firstAttribute="leading" secondItem="mVR-h6-9vm" secondAttribute="leading" id="SRc-8g-EwM"/>
+                <constraint firstItem="uQw-dy-iAU" firstAttribute="leading" secondItem="jAJ-sq-LIH" secondAttribute="leading" id="VKh-tt-zeO"/>
+                <constraint firstItem="ur0-Lv-6wi" firstAttribute="leading" secondItem="nWa-4q-rHe" secondAttribute="leading" id="VaA-dU-hKV"/>
+                <constraint firstItem="kVO-7e-Vog" firstAttribute="top" secondItem="IQx-hA-2FW" secondAttribute="bottom" id="Wcf-5z-H29"/>
+                <constraint firstItem="mVR-h6-9vm" firstAttribute="bottom" secondItem="jAJ-sq-LIH" secondAttribute="bottom" id="a6F-No-8tP"/>
+                <constraint firstItem="8NE-OY-cnO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="agh-xD-1lV"/>
+                <constraint firstItem="NCY-3O-O8Y" firstAttribute="top" secondItem="uQw-dy-iAU" secondAttribute="bottom" id="bIq-cO-scY"/>
+                <constraint firstItem="ur0-Lv-6wi" firstAttribute="top" secondItem="NCY-3O-O8Y" secondAttribute="top" id="bPD-Vm-jys"/>
+                <constraint firstItem="nWa-4q-rHe" firstAttribute="bottom" secondItem="uQw-dy-iAU" secondAttribute="bottom" id="c5m-Kq-05q"/>
+                <constraint firstItem="ELz-mz-duM" firstAttribute="top" secondItem="11c-ZC-f8l" secondAttribute="bottom" constant="2.5" id="cNu-Ug-0nx"/>
+                <constraint firstItem="ZKk-Wt-DDC" firstAttribute="trailing" secondItem="3vw-KT-KLg" secondAttribute="trailing" id="cVY-Qw-Sux"/>
+                <constraint firstItem="3vw-KT-KLg" firstAttribute="leading" secondItem="lGX-EV-jhD" secondAttribute="leading" id="chi-55-hi6"/>
+                <constraint firstItem="IQx-hA-2FW" firstAttribute="width" secondItem="hVc-lJ-XHp" secondAttribute="width" id="cjg-RF-xxP"/>
+                <constraint firstItem="nWa-4q-rHe" firstAttribute="trailing" secondItem="mVR-h6-9vm" secondAttribute="trailing" id="dYU-Fp-4fN"/>
+                <constraint firstItem="mVR-h6-9vm" firstAttribute="top" secondItem="jAJ-sq-LIH" secondAttribute="top" id="eZr-8l-jWN"/>
+                <constraint firstAttribute="trailing" secondItem="rIb-ek-xu9" secondAttribute="trailing" constant="10" id="gNk-pN-Oy6"/>
+                <constraint firstItem="IQx-hA-2FW" firstAttribute="top" secondItem="hVc-lJ-XHp" secondAttribute="bottom" id="gYh-z9-4ec"/>
+                <constraint firstItem="NCY-3O-O8Y" firstAttribute="height" secondItem="uQw-dy-iAU" secondAttribute="height" id="gsq-8H-cak"/>
+                <constraint firstItem="NCY-3O-O8Y" firstAttribute="width" secondItem="uQw-dy-iAU" secondAttribute="width" id="hLd-6F-NTG"/>
+                <constraint firstItem="jAJ-sq-LIH" firstAttribute="height" secondItem="ELz-mz-duM" secondAttribute="height" id="irZ-LO-KH9"/>
+                <constraint firstItem="jAJ-sq-LIH" firstAttribute="top" secondItem="ELz-mz-duM" secondAttribute="bottom" id="m6W-PS-DKi"/>
+                <constraint firstItem="hVc-lJ-XHp" firstAttribute="top" secondItem="NCY-3O-O8Y" secondAttribute="bottom" id="oKR-XG-j6R"/>
+                <constraint firstItem="ELz-mz-duM" firstAttribute="height" secondItem="11c-ZC-f8l" secondAttribute="height" id="oX7-HB-9dE"/>
+                <constraint firstItem="lGX-EV-jhD" firstAttribute="leading" secondItem="ur0-Lv-6wi" secondAttribute="leading" id="ou8-Mr-Dm8"/>
+                <constraint firstAttribute="trailing" secondItem="11c-ZC-f8l" secondAttribute="trailing" constant="10" id="pmQ-qx-X4O"/>
+                <constraint firstItem="ELz-mz-duM" firstAttribute="leading" secondItem="11c-ZC-f8l" secondAttribute="leading" id="qKU-7f-Pg8"/>
+                <constraint firstItem="kVO-7e-Vog" firstAttribute="height" secondItem="IQx-hA-2FW" secondAttribute="height" id="riH-mS-HLM"/>
+                <constraint firstItem="ur0-Lv-6wi" firstAttribute="trailing" secondItem="nWa-4q-rHe" secondAttribute="trailing" id="tDF-le-9Qc"/>
+                <constraint firstItem="rIb-ek-xu9" firstAttribute="leading" secondItem="ELz-mz-duM" secondAttribute="trailing" constant="8" id="u3i-Cv-Pdc"/>
+                <constraint firstItem="uQw-dy-iAU" firstAttribute="height" secondItem="jAJ-sq-LIH" secondAttribute="height" id="upi-Zp-yQR"/>
+                <constraint firstItem="lGX-EV-jhD" firstAttribute="trailing" secondItem="ur0-Lv-6wi" secondAttribute="trailing" id="z35-um-A5G"/>
+                <constraint firstItem="jAJ-sq-LIH" firstAttribute="width" secondItem="ELz-mz-duM" secondAttribute="width" id="zXs-8m-xzO"/>
+                <constraint firstItem="11c-ZC-f8l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="zgW-SG-TlG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="charismaNumberLabel" destination="3vw-KT-KLg" id="t9d-bm-gQN"/>
+                <outlet property="dexterityNumberLabel" destination="ur0-Lv-6wi" id="6cB-hS-tLI"/>
+                <outlet property="fortitudeNumberLabel" destination="nWa-4q-rHe" id="DDf-Sd-Xju"/>
+                <outlet property="intelligenceNumberLabel" destination="lGX-EV-jhD" id="rih-p9-TFv"/>
+                <outlet property="staminaNumberLabel" destination="mVR-h6-9vm" id="BrM-DU-EBe"/>
+                <outlet property="strengthNumberLabel" destination="rIb-ek-xu9" id="8kM-gS-MyX"/>
+                <outlet property="wisdomNumberLabel" destination="ZKk-Wt-DDC" id="MMF-I5-gGK"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="-115.5"/>
+        </view>
+    </objects>
+</document>
